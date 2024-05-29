@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72a8874df9f5f024f9ff787e25890ac0, type: 3}
+  m_Name: Computer
+  m_EditorClassIdentifier: 
+  displayName: "\uCEF4\uD4E8\uD130"
+  description: "\uC55E\uC5D0 \uC11C\uBA74 \uD55C\uBB34 \uCF54\uB529\uC744 \uD574\uC57C\uD55C\uB2E4."
+  type: 0
+  dropPrefab: {fileID: 7345817418850788688, guid: 8596851e5df0212449a7653ea82c1d03, type: 3}

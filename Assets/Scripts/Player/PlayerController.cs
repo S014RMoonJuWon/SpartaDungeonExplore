@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    bool IsGrounded()
+    public bool IsGrounded()
     {
         Ray[] rays = new Ray[4]
         {
