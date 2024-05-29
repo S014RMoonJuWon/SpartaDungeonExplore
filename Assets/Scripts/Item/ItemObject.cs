@@ -13,11 +13,13 @@ public class ItemObject : MonoBehaviour, IInteractable
 
     public string GetInteractPrompt()
     {
-        return "";
+        string str = $"{data.displayName}\n{ data.description}";
+        return str;
     }
 
     public void OnInteract()
     {
-        
+        CharacterManager.Instance.Player.itemData = data;
+        CharacterManager.Instance.Player.interact?.Invoke();
     }
 }

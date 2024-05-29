@@ -9,8 +9,6 @@ public class PlayerCondition : MonoBehaviour
     Condition health { get { return uiCondition.health; } }
     Condition stamina { get { return uiCondition.stamina; } }
 
-    public event Action OnTakeDamage;
-
     private void Update()
     {
         stamina.Add(stamina.passiveValue * Time.deltaTime);
