@@ -10,7 +10,7 @@ public class JumpZone : MonoBehaviour
     bool isJumpZone;
     Rigidbody rb;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision) // 충돌할 때 점프존 태그 확인
     {
         if(collision.gameObject.tag == "JumpZone")
         {
@@ -27,7 +27,7 @@ public class JumpZone : MonoBehaviour
         AutoJump();
     }
 
-    private void AutoJump()
+    private void AutoJump() // 태그가 점프 존이면 자동 점프 메소드
     {
         if (isJumpZone)
         {

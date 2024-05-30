@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: JumpZone
   m_EditorClassIdentifier: 
   displayName: "\uC810\uD504\uC874"
-  description: "\uC62C\uB77C\uAC00\uBA74 \uC810\uD504\uB97C \uD560 \uC218 \uC788\uB2E4."
+  description: "\uC62C\uB77C\uAC00\uBA74 \uC790\uB3D9\uC73C\uB85C \uC810\uD504\uD55C\uB2E4."
   type: 1
   dropPrefab: {fileID: 7004990318068702160, guid: cc0775bc709040744b987d615715b22c, type: 3}

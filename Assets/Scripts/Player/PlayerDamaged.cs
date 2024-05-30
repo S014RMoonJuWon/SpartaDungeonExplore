@@ -29,7 +29,7 @@ public class PlayerDamaged : MonoBehaviour
     {
         float fallDistance = lastHeight - transform.position.y;
 
-        if (fallDistance > 5 && fallDistance <= 10)
+        if (fallDistance > 7 && fallDistance <= 10)
         {
             health.Subtract(10);
         }

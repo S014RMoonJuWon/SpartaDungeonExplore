@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Interaction : MonoBehaviour
 {
-    public float cheackRate = 0.05f;
+    public float checkRate = 0.05f;
     private float lastCheckTime;
     public float maxCheckDistance;
     public LayerMask layerMask;
@@ -16,14 +17,14 @@ public class Interaction : MonoBehaviour
     public TextMeshProUGUI promptText;
     private Camera _camera;
 
-    private void Start()
+    void Start()
     {
         _camera = Camera.main;
     }
 
-    private void Update()
+    void Update()
     {
-        if(Time.time - lastCheckTime > cheackRate)
+        if(Time.time - lastCheckTime > checkRate)
         {
             lastCheckTime = Time.time;
 
@@ -52,5 +53,15 @@ public class Interaction : MonoBehaviour
     {
         promptText.gameObject.SetActive(true);
         promptText.text = curInteractable.GetInteractPrompt();
+    }
+
+    public void OnInteractInput(InputAction.CallbackContext context)
+    {
+        if(context.phase == InputActionPhase.Started && curInteractable != null)
+        {
+            curInteractable.OnInteract();
+            curInteractGameObject = null;
+            curInteractable = null;
+        }
     }
 }

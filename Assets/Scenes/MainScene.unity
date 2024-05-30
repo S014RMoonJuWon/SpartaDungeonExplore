@@ -3136,7 +3136,7 @@ GameObject:
   - component: {fileID: 289103833}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4722,8 +4722,9 @@ GameObject:
   - component: {fileID: 384908111}
   - component: {fileID: 384908110}
   - component: {fileID: 384908109}
+  - component: {fileID: 384908112}
   m_Layer: 5
-  m_Name: Button
+  m_Name: RetryButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4792,7 +4793,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 384908110}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 384908112}
+        m_TargetAssemblyTypeName: RetryBtn, Assembly-CSharp
+        m_MethodName: OnRetry
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &384908110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4831,6 +4844,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384908107}
   m_CullTransparentMesh: 1
+--- !u!114 &384908112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384908107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc8685f4e42cd643bb62d6881d0f11e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &393350389 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 499240, guid: ef77650fcc7dfd64a8d614922d90c382, type: 3}
@@ -6800,6 +6825,72 @@ Transform:
   - {fileID: 1894011318}
   m_Father: {fileID: 2023689119}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &602742359
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1623980548}
+    m_Modifications:
+    - target: {fileID: 6596662832022418417, guid: cc0775bc709040744b987d615715b22c, type: 3}
+      propertyPath: stuffTxt
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7004990318068702160, guid: cc0775bc709040744b987d615715b22c, type: 3}
+      propertyPath: m_Name
+      value: JumpZone (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7190977614426219154, guid: cc0775bc709040744b987d615715b22c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 7190977614426219154, guid: cc0775bc709040744b987d615715b22c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3214.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 7190977614426219154, guid: cc0775bc709040744b987d615715b22c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.982632
+      objectReference: {fileID: 0}
+    - target: {fileID: 7190977614426219154, guid: cc0775bc709040744b987d615715b22c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7190977614426219154, guid: cc0775bc709040744b987d615715b22c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7190977614426219154, guid: cc0775bc709040744b987d615715b22c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7190977614426219154, guid: cc0775bc709040744b987d615715b22c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7190977614426219154, guid: cc0775bc709040744b987d615715b22c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7190977614426219154, guid: cc0775bc709040744b987d615715b22c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7190977614426219154, guid: cc0775bc709040744b987d615715b22c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc0775bc709040744b987d615715b22c, type: 3}
+--- !u!4 &605052970 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7190977614426219154, guid: cc0775bc709040744b987d615715b22c, type: 3}
+  m_PrefabInstance: {fileID: 602742359}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &609563094 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 411612, guid: 0759e5b8616fa854dbb807a3ac19ec2b, type: 3}
@@ -9280,7 +9371,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4293146367
-  m_fontColor: {r: 1, g: 0.21226418, b: 0.89421743, a: 1}
+  m_fontColor: {r: 1, g: 0.21176472, b: 0.8941177, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -16544,7 +16635,7 @@ Transform:
   m_GameObject: {fileID: 1216804084}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15, y: 0.182, z: -20}
+  m_LocalPosition: {x: -15, y: 0.034, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16632,7 +16723,19 @@ MonoBehaviour:
     m_ActionId: 724c68b1-724c-479a-ac37-dfb6cc87011b
     m_ActionName: Player/Inventory[/Keyboard/tab]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1216804096}
+        m_TargetAssemblyTypeName: Interaction, Assembly-CSharp
+        m_MethodName: OnInteractInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: a7cfcb62-b2d4-49aa-8acb-cca009d7fbc8
     m_ActionName: Player/Interaction[/Keyboard/e]
   - m_PersistentCalls:
@@ -16710,9 +16813,9 @@ MonoBehaviour:
   jumpPower: 80
   groundLayerMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 183
   cameraContainer: {fileID: 1931273769}
-  minXLook: -20
+  minXLook: -45
   maxXLook: 20
   lookSensitivity: 0.05
 --- !u!114 &1216804091
@@ -16803,8 +16906,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b1b684ead3f5694fb4a3386f371df04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheackRate: 0.05
-  maxCheckDistance: 3
+  checkRate: 0.05
+  maxCheckDistance: 5
   layerMask:
     serializedVersion: 2
     m_Bits: 128
@@ -20183,6 +20286,7 @@ Transform:
   m_Children:
   - {fileID: 5610491524502694362}
   - {fileID: 7790944679436314391}
+  - {fileID: 605052970}
   - {fileID: 5397517271544979416}
   - {fileID: 255900082949670099}
   - {fileID: 2189040060319138807}
@@ -24258,6 +24362,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1623980548}
     m_Modifications:
+    - target: {fileID: 6596662832022418417, guid: cc0775bc709040744b987d615715b22c, type: 3}
+      propertyPath: stuffTxt
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7004990318068702160, guid: cc0775bc709040744b987d615715b22c, type: 3}
       propertyPath: m_Name
       value: JumpZone
@@ -31868,6 +31976,10 @@ PrefabInstance:
     - target: {fileID: 1126588622777412049, guid: 992a466744fe36245ac1997de7dc5001, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367634975675270675, guid: 992a466744fe36245ac1997de7dc5001, type: 3}
+      propertyPath: stuffTxt
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5405066272934260169, guid: 992a466744fe36245ac1997de7dc5001, type: 3}
       propertyPath: m_Name

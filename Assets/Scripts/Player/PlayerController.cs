@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1.0f;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -49,6 +50,7 @@ public class PlayerController : MonoBehaviour
         dir.y = _rigidbody.velocity.y;
 
         _rigidbody.velocity = dir;
+        Debug.Log("MoveMethod");
     }
     private void CameraLook()
     {
@@ -69,6 +71,7 @@ public class PlayerController : MonoBehaviour
         {
             curMovementInput = Vector2.zero;
         }
+        Debug.Log("Move");
     }
 
     public void OnLook(InputAction.CallbackContext context)
